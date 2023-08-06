@@ -1,0 +1,76 @@
+.container{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.button-layout{
+    width: 100%;
+    height: 30%;
+}
+.button-layout > div{
+    width: 100%;
+    height: 100%;
+}
+#up {
+    /* margin: 0 auto; */
+    width: 50%;
+    margin-bottom: 2%;
+}
+/* This class darkens the colour of the buttons for
+a few seconds and then brings them back to the original colour */
+.btn-primary:focus , .activated{
+    background-color: #0B07D7;
+    transition: background-color 0.5s ease;
+}
+.btn-danger:focus , .activated-red{
+    background-color: #9a1a26;
+    transition: background-color 0.5s ease;
+}
+
+@keyframes blinking {
+    0% {
+      background-color: #212529;
+    }
+    50% {
+      background-color: #198754;
+    }
+    100% {
+        background-color: #212529;
+    }
+  }
+
+.blink{
+    color:white;
+    animation: blinking 3s infinite;
+}
+
+@keyframes blinkingred {
+    0% {
+      background-color: #212529;
+    }
+    50% {
+      background-color: #dc3545;
+    }
+    100% {
+        background-color: #212529;
+    }
+  }
+
+.blinkred{
+    animation: blinkingred 1s infinite;
+}
+
+
+.ble-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons-ble > * {
+    margin: 5px;
+}
+/* it will be activated with javascript */
